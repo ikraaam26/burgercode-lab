@@ -18,8 +18,7 @@ pipeline {
   stage('Test (Control de Calidad)') {
     steps {
       echo 'Probando la hamburguesa...'
-      // ¡Mejor práctica! Ejecutamos el test DENTRO de la hamburguesa que acabamos de
-crear
+      // ¡Mejor práctica! Ejecutamos el test DENTRO de la hamburguesa que acabamos de crear
   sh 'docker run --rm burgercode-app python test.py'
   }
 }
